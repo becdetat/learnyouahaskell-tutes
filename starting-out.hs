@@ -19,3 +19,7 @@ adjectives = ["lazy","grouchy","scheming"]
 nameGenerator = [ adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns ]
 
 removeLowercase string = [c | c <- string, c `elem` ['A'..'Z']]
+
+triangles from to = [(a,b,c) | a <- [from..to], b <- [from..to], c <- [from..to]]
+rightTriangles from to = [(a,b,c) | a <- [from..to], b <- [from..to], c <- [from..to], a^2 + b^2 == c^2]
+
