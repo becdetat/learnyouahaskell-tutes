@@ -11,3 +11,6 @@ doubleSmallNumber x =
 		else x * 2
 
 doubleSmallNumber' x = (if x > 100 then x else x * 2) + 1
+
+boomBangs numbers = [ if x < 10 then "BOOM" else "BANG" | x <- numbers, odd x ]
+
